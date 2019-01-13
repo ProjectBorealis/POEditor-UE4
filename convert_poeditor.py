@@ -24,6 +24,9 @@ for poe_file in poeditor_files:
             variant_name = 'Hans'
         elif 'traditional' in variant_name:
             variant_name = 'Hant'
+        elif 'Moldavian' in language_name:
+            language_name = 'Romanian'
+            variant_name = 'MD'
         print(language_name + " ({0})".format(variant_name))
         variant_name = "-" + variant_name
     else:
